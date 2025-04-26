@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import ProjectGallery from './ProjectGallery';
 import FeaturedProject from './Feature';
@@ -34,22 +34,25 @@ const PortfolioLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-neutral-100 py-6 px-4 sm:py-12 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <HeroSection 
           title="Find the project you love"
-          
           buttonText="Explore"
           onButtonClick={handleExploreClick}
         />
         
-        <FeaturedProject 
-          image="/h.svg"
-          alt="Featured architectural building"
-          cards={projectCards}
-        />
+        <div className="mt-8 sm:mt-12">
+          <FeaturedProject 
+            image="/h.svg"
+            alt="Featured architectural building"
+            cards={projectCards}
+          />
+        </div>
         
-        <ProjectGallery images={galleryImages} />
+        <div className="mt-8 sm:mt-16">
+          <ProjectGallery images={galleryImages} />
+        </div>
       </div>
     </div>
   );
