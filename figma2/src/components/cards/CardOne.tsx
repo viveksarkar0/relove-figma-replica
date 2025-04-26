@@ -15,9 +15,9 @@ const CardOne = () => {
           <img src="/cardUi/music/songIcon.svg" alt="" className="w-5" />
           <div className="flex justify-center items-center translate-x-12 md:translate-x-14 py-4">
             <div className="flex gap-3">
-              <Rewind className="h-4" fill />
-              <Play fill className="h-4" />
-              <FastForward fill className="h-4" />
+              <Rewind className="h-4" fill="currentColor" />
+              <Play fill="currentColor" className="h-4" />
+              <FastForward fill="currentColor" className="h-4" />
             </div>
 
             <div className="relative w-40 md:w-58 h-px bg-black top-8 md:top-8 right-45 translate-x-5  md:translate-x-0 mb-6">
